@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<script>
+function lab()
+		{
+		var a = document.getElementById("number");
+		var b = document.getElementById("number1");
+		a = a.value;
+		b = b.value;
+
+		function factorial(b)
+		{
+				if (b < 0) 
+				{
+				return -1;
+				}
+				else if(b == 0) {
+				return 1;
+				}
+				var tmp = b;
+				while( b --> 2){
+				tmp *=b;
+				}
+				return tmp;
+				factorial(b);
+				}		
+
+
+				for(var a = 0; a <= b; a++)
+				{
+						var c = Math.pow(-1, (a)) * Math.pow(b, (a)) / a;
+				}
+				result.innerHTML = c;
+				}
+
+
+</script>
+</head>
+<body>
+<input id="number" type="text">
+<input id="number1" type="text">
+<input type="button" value="Рассчитать" onclick="lab()">
+<p id="result"></p>
+</body>
+</html>
